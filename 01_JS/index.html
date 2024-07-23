@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function checkFullYear() {
+            let res;
+            const year = document.getElementById('input').value;
+            if(year%4 == 0){
+                if(year%100 == 0 && year%400 !== 0) res = false;
+                else res = true;
+            }
+            else res = false;
+
+            if (res){
+                document.getElementById("result").innerText="윤년입니다."
+            } 
+            else{
+                document.getElementById("result").innerText="윤년이 아닙니다."
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>윤년 계산기</h2>
+    <input id="input" type="text" placeholder="년도를 숫자만 입력해주세요.">
+    <button onClick=checkFullYear()>확인</button>
+    <div id="result"></div>
+</body>
+</html>
