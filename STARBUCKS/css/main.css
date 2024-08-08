@@ -9,14 +9,15 @@ a{
     :visited{
         color: black;
     }
-    
 }
+
 header{
     display: flex;
-    margin: 0 1vw;
-    width: fit-content;
-    justify-content: flex-start;
-
+    padding: 0 2vw;
+    width: 97%;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 
     .top {
         display: flex;
@@ -32,15 +33,14 @@ header{
             border-radius: 5px;
             padding: 3px 5px;
         }
-    }
 
+    }
     
 
     .logo{
         width: fit-content;
 
         img{
-            padding: 20px 10px;
             padding-right: 0;
         }
     }
@@ -52,7 +52,7 @@ header{
     height: fit-content;
     display: flex;
     background-image: url('../src/2024_august_bg.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     justify-content: center;
     
@@ -62,11 +62,13 @@ header{
 
     .solgan{
         width: 13.1%;
-        padding: 7vw 4vw 0 0;
+        padding: 5vw 4vw 0 0;
+        text-align: center;
 
         img{
             width: 100%;
         }
+
     }
 
     .drink1{
@@ -80,7 +82,15 @@ header{
     }
     .drink4{
         width: 19.95vw;
+        padding-bottom: 8vw;
     }
+
+    button{
+        background-color: transparent;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    
 }
 
 .menu{
@@ -124,7 +134,6 @@ header{
 
 .menu > li > div{
     position: absolute;
-    /* left: -100%; */
     background-color: rgb(0, 0, 0, 0.8);
     display: block;
     width: 100vw;
@@ -133,8 +142,6 @@ header{
 
 .depth > ul {
     display: flexbox;
-    /* display: flex;
-    flex-direction: column; */
 
 }
 
@@ -142,4 +149,178 @@ header{
     position: absolute;
     width: max-content;
     display: flex;
+}
+
+.mobile-header{
+    /* justify-content: flex-end; */
+    display: inline-block;
+    img{
+        padding: 10px;
+    }
+}
+
+
+.web-btn{
+    color: #036243;
+    border: 2px solid #036243;
+    font-size: 13px;
+    padding: 8px 20px;
+    display: block;
+}
+
+.mobile-btn{
+    color: #1d227d;
+    border: 2px solid #1d227d;
+    padding: 15px 50px;
+    font-size: 2vw;
+    display: block;
+}
+
+@media screen and (max-width: 960px){
+    .web-header{
+        display: none;
+    }
+    .web-btn{
+        display: none;
+    }
+    .logo > img{
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
+    .top-banner{
+        display: block;
+        background-image: url('../src/2024_august_bg_m.jpg');
+        /* background-size: contain; */
+        background-size: 100% 100%;
+        /* align-items: center; */
+        height: max-content;
+        padding: 10px;
+        padding-bottom: 10%;
+
+       
+
+        .solgan{
+            width: 40vw;
+            padding: 70px 0 0 20vw;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .drink1{
+            width: 70vw;
+            padding-left: 20vw;
+        }
+        .drink2{
+            width: 60vw;
+            padding-left: 20vw;
+
+        }
+        .drink3{
+            width: 67vw;
+            padding-left: 25vw;
+
+        }
+        .drink4{
+            width: 65vw;
+            padding-left: 20vw;
+            margin-bottom: 10vw;
+        }
+        img{
+            display: block;
+            padding: 1px;
+        }
+        .drinks{
+            display: block;
+        }
+    }
+
+        
+        
+}
+@media screen and (min-width: 960px){
+    .mobile-header{
+        display: none;
+    }
+    .mobile-btn{
+        display: none;
+    }
+
+    .logo > img{
+        padding: 20px 10px;
+    }
+}
+
+.middle-banner{
+    background-color: #1e3932;
+    color: #FFFFFF;
+    display: flex;
+    padding: 30px;
+
+    img{
+        padding-right: 20px;
+    }
+    
+
+    span{
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+
+    div{
+        padding: 5px 0;
+    }
+}
+
+.space-box{
+    width: 100%;
+
+
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.ment-box-small{
+    font-size: 13px;
+}
+
+.btn-box{
+    margin: auto 0;
+    float: right;
+}
+
+.join-btn{
+    background-color: #00704a;
+    color: #FFFFFF;
+    border: 2px solid #00704a;
+    box-shadow: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.login-btn{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+@media screen and (max-width: 1020px){
+    .banner-container{
+        display: inline-block;
+    }
+    .btn-box{
+        float: left;
+    }
 }
