@@ -1,0 +1,19 @@
+body{
+    background-color: #ccc;
+}
+
+h1{
+    color:blue;
+}
+
+.front{
+    color: red;
+}
+
+.back{
+    color: green;
+}
+
+.full{
+    color: aqua;
+}
