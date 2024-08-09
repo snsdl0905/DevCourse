@@ -177,6 +177,12 @@ header{
 }
 
 @media screen and (max-width: 960px){
+    .middle-coffee-container{
+        display: none;
+    }
+    .middle-bean-container{
+        display: none;
+    }
     .web-header{
         display: none;
     }
@@ -235,11 +241,12 @@ header{
         .drinks{
             display: block;
         }
+
     }
 
-        
-        
+
 }
+
 @media screen and (min-width: 960px){
     .mobile-header{
         display: none;
@@ -251,13 +258,34 @@ header{
     .logo > img{
         padding: 20px 10px;
     }
+
+    .middle-coffee-container-mobile{
+        display: none;
+    }
+
+    .middle-bean-container-mobile{
+        display: none;
+    }
+}
+
+.space-box{
+    width: 50%;
+}
+
+.outer-middle-banner{
+    background-color: #1e3932;
+    width: 100%;
+
 }
 
 .middle-banner{
-    background-color: #1e3932;
     color: #FFFFFF;
     display: flex;
     padding: 30px;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+
 
     img{
         padding-right: 20px;
@@ -274,18 +302,24 @@ header{
     div{
         padding: 5px 0;
     }
+
+    .login-btn{
+        margin-top: 10px;
+    }
 }
 
 .space-box{
     width: 100%;
+}
 
-
+.content-box{
+    width: 70%;
 }
 
 .banner-container{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 
 }
 
@@ -305,6 +339,7 @@ header{
     box-shadow: none;
     padding: 5px 15px;
     border-radius: 5px;
+    margin-right: 5px;
 }
 
 .login-btn{
@@ -322,5 +357,117 @@ header{
     }
     .btn-box{
         float: left;
+    }
+}
+
+.middle-bean-container{
+    background-image: url('../src/25th_summer_bean_bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+
+    #bean{
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+
+    #bean-text{
+        margin-bottom: 120px;
+    }
+
+
+}
+
+.bean-box-web{
+    align-items: center;
+    display: flex;
+
+    .btn-black{
+        float: left;
+        border: 2px solid black;
+
+    }
+}
+
+.btn-black{
+    background: transparent;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px 20px;
+    height: fit-content;
+
+}
+
+.bean-box-web > div{
+    display: block;
+}
+
+.middle-coffee-container{
+    /* height: 400px; */
+    background-image: url('../src/240521_pc_reserve_bg_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: contain; */
+    /* background-position: center; */
+    position: relative;
+}
+
+.coffee-img-container{
+    width: 100%;
+
+    img{
+        width: 100%;
+        
+    }
+}
+
+.cofee-text-img{
+    float: left;
+    object-fit: contain;
+    width: 50%;
+}
+
+
+.cofee-text-img-container{
+    position: absolute;
+    /* top: -10vw;
+    left: 50%; */
+    width: 50%;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-coffee-container-mobile{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.middle-bean-container-mobile{
+
+    width: 100%;
+
+}
+
+.bean-box-mobile{
+    background-image: url('../src/25th_summer_bean_bg_m.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin: 0 auto; */
+    text-align: center;
+    align-items: center;
+    /* display: flex; */
+    padding: 15vw;
+    /* padding-bottom: none; */
+    width: 100%;
+
+    .btn-black{
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        width: ;
     }
 }
